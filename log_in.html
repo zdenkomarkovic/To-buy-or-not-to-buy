@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="div-nav">
+      <p class="nav-logo">To <span>Buy</span> or not to <span>buy</p>
+      <a href="index.html"
+        ><button class="nav-btn">Check the categories.</button></a
+      >
+      <a href="ads.html"><button class="nav-btn">Check the ads.</button></a>
+
+      <a href="log_in.html"
+        ><button class="nav-btn btn-nav">Go to log-in page</button></a
+      >
+    </div>
+    <div id="container">
+      <h1>To <span>Buy</span> or not to <span>buy</span></h1>
+      <div id="main-div">
+        <div class="hide" id="registration-div">
+          <input type="text" id="input-firstname" placeholder="First Name" />
+          <br />
+          <input type="text" id="input-lastname" placeholder="Last Name" />
+          <br />
+          <input type="text" id="input-username" placeholder="Username" />
+          <br />
+          <input type="text" id="input-password" placeholder="Password" />
+          <br />
+          <input type="text" id="input-address" placeholder="Address" />
+          <br />
+          <input type="text" id="input-phonenumber" placeholder="Phone Number" />
+          <br />
+          <label for="">Select gender</label>
+          <input type="radio" id="input-male" name="gender" value="M" id="m" />
+          <label for="">M</label>
+          <input
+            type="radio"
+            id="Input-female"
+            name="gender"
+            value="F"
+            id="f"
+          /><label for="">F</label>
+          <br />
+  
+          <input
+            type="checkbox"
+            name="options"
+            value="option1"
+            checked
+            id="admin"
+          />
+          admin
+          <br />
+          <input type="checkbox" name="options" value="option2" id="neadmin" />
+          obican korisnik
+          <br />
+          <button id="button-registration">Registration</button>
+  
+          <p>If you have allready registered go to <b id="b-login">Log in</b></p>
+        </div>
+        <div id="login-div">
+          <input type="text" id="login-username" placeholder="Username" />
+          <br />
+          <input type="text" id="login-password" placeholder="Password" />
+          <br />
+  
+          <button id="button-login">Log in</button>
+          <p>If you dont have account go to <b id="b-register">Register</b></p>
+        </div>
+      </div>
+
+
+    </div>
+   
+    <script src="log_in.js" type="module"></script>
+  </body>
+</html>

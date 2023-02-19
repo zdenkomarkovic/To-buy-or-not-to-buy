@@ -1,0 +1,147 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "firstName": "Milan",
+      "lastName": "Stefanovic",
+      "username": "Miki",
+      "password": "123",
+      "address": "Jastrebacka 32",
+      "phoneNumber": "0642282288",
+      "gender": "M",
+      "admin": false
+    },
+    {
+      "id": 2,
+      "firstName": "Ivan",
+      "lastName": "Ivanovic",
+      "username": "Ica",
+      "password": "123",
+      "address": "Sumatovacka 44",
+      "phoneNumber": "+381631258969",
+      "gender": "M",
+      "admin": false
+    },
+    {
+      "firstName": "Zdenko",
+      "lastName": "Markovic",
+      "username": "Zdene",
+      "password": "123",
+      "address": "Djordja Krstica 31",
+      "phoneNumber": "+381641967267",
+      "gender": "M",
+      "admin": true,
+      "id": 3
+    },
+    {
+      "firstName": "Ivan",
+      "lastName": "Milkov",
+      "username": "Buga",
+      "password": "123",
+      "address": "Rasadnik",
+      "phoneNumber": "0642258996",
+      "gender": "M",
+      "admin": false,
+      "id": 4
+    }
+  ],
+  "categories": [
+    {
+      "name": "Home",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2SqR6WWfYdpRHCL1Mjb6MExiY4WJHPyIC5Q&usqp=CAU",
+      "id": 1
+    },
+    {
+      "name": "Clothing",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5OJqL7P6NBP6a5WDKomge5qESy3B90RmkUQ&usqp=CAU",
+      "id": 2
+    },
+    {
+      "name": "Bikes",
+      "image": "https://www.autoexclusive.rs/storage/posts/thumbnail/2020/Feb/99059/najocekivaniji-motori-2020-godine.jpeg",
+      "id": 4
+    },
+    {
+      "name": "Cars",
+      "image": "https://www.b92.net/news/pics/2021/12/31/34391009461cebd187d51c889836672_v4_big.jpg",
+      "id": 5
+    },
+    {
+      "name": "Sports",
+      "image": "https://img.freepik.com/free-vector/soccer-volleyball-baseball-rugby-equipment_1441-4026.jpg?w=2000",
+      "id": 6
+    }
+  ],
+  "ads": [
+    {
+      "title": "Vespa",
+      "description": "2011 year, 150ccm, in very good condition. I give warranty for 6 months",
+      "price": "2050",
+      "image": "https://images.piaggio.com/vespa/vehicles/evpq000vto/evpqaxnvto/evpqaxnvto-02-s.png",
+      "likes": 34,
+      "categoryId": "4",
+      "userId": "4",
+      "id": 7
+    },
+    {
+      "title": "Shoes",
+      "description": "Very nice used shoes, but I dont have proper suit for them.",
+      "price": "145",
+      "image": "https://pletenijesloves.files.wordpress.com/2017/07/stare-cipele.jpg",
+      "likes": 8,
+      "categoryId": "2",
+      "userId": "4",
+      "id": 8
+    },
+    {
+      "title": "Suzuki",
+      "description": "GSXR1000 in perfect condition.  Grandma drove the bike only to the store and back.",
+      "price": "8800",
+      "image": "https://westernmotorcycles.com.au/wp-content/uploads/2021/11/suzuki-gsxr1000am3-i22.jpg",
+      "likes": 0,
+      "categoryId": "4",
+      "userId": "2",
+      "id": 9
+    },
+    {
+      "title": "Yamaha",
+      "description": "1988 125cc Jedva ide, potrebno prvo pogurati pa da se sedne",
+      "price": "800",
+      "image": "https://i.pinimg.com/originals/e4/c5/96/e4c596721d3dc245f59d34c34e9ffba8.jpg",
+      "likes": 0,
+      "categoryId": "4",
+      "userId": "2",
+      "id": 10
+    },
+    {
+      "title": "Honda",
+      "description": "CB650R 2022 115hp. Very good condition!",
+      "price": "9200",
+      "image": "https://powersports.honda.com/-/media/products/family/cb650r/trims/trim-main/cb650r/2023/2023-cb650r-matte_gray_metallic-650x380.png",
+      "likes": 0,
+      "categoryId": "4",
+      "userId": "1",
+      "id": 11
+    }
+  ],
+  "comments": [
+    {
+      "text": "Da je prefarbas pa da je uzmem",
+      "adId": "7",
+      "id": 18
+    },
+    {
+      "text": "Kog ti zajebavas?",
+      "adId": "8",
+      "id": 20
+    },
+    {
+      "text": "Video sam ga u raspadnom stanju je. Mnogo trazis za njega",
+      "adId": "9",
+      "id": 21
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
