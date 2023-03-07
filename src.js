@@ -1,5 +1,5 @@
 async function getUsers() {
-  const response = await fetch(`https://localhost:3000/users`, {
+  const response = await fetch(`https://zdenkomarkovic.github.io/users_ads_api/users_ads.json/users`, {
     method: 'GET',
   });
   const users = await response.json();
@@ -7,14 +7,14 @@ async function getUsers() {
 }
 
 async function getUser(id) {
-  const response = await fetch(`https://localhost:3000/users/${id}`, {
+  const response = await fetch(`https://zdenkomarkovic.github.io/users_ads_api/users_ads.json/users/${id}`, {
     method: 'GET',
   });
   const users = await response.json();
   return users;
 }
 async function deleteUser(id) {
-  const response = await fetch(`https://localhost:3000/users/${id}`, {
+  const response = await fetch(`https://zdenkomarkovic.github.io/users_ads_api/users_ads.json/users/${id}`, {
     method: 'DELETE',
   });
   const users = await response.json();
@@ -30,7 +30,7 @@ async function createUser(
   gender,
   admin
 ) {
-  const response = await fetch(`https://localhost:3000/users`, {
+  const response = await fetch(`https://zdenkomarkovic.github.io/users_ads_api/users_ads.json/users`, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
@@ -50,7 +50,7 @@ async function createUser(
   return user;
 }
 async function updateUser(id) {
-  const response = await fetch(`https://localhost:3000/users/${id}`, {
+  const response = await fetch(`https://zdenkomarkovic.github.io/users_ads_api/users_ads.json/users/${id}`, {
     method: 'PUT',
     headers: {
       'Content-Type': 'application/json',
@@ -72,7 +72,7 @@ async function updateUser(id) {
 
 async function getUserByUsernameAndPassword(username, password) {
   const response = await fetch(
-    `https://localhost:3000/users?username=${username}&password=${password}`,
+    `https://zdenkomarkovic.github.io/users_ads_api/users_ads.json/users?username=${username}&password=${password}`,
     {
       method: 'GET',
     }
@@ -82,7 +82,7 @@ async function getUserByUsernameAndPassword(username, password) {
 }
 
 async function getCategories() {
-  const response = await fetch(`https://localhost:3000/categories`, {
+  const response = await fetch(`https://zdenkomarkovic.github.io/users_ads_api/users_ads.json/categories`, {
     method: 'GET',
   });
   const categories = await response.json();
@@ -90,7 +90,7 @@ async function getCategories() {
 }
 
 async function getCategory(id) {
-  const response = await fetch(`https://localhost:3000/categories/${id}`, {
+  const response = await fetch(`https://zdenkomarkovic.github.io/users_ads_api/users_ads.json/categories/${id}`, {
     method: 'GET',
   });
   const category = await response.json();
@@ -98,7 +98,7 @@ async function getCategory(id) {
 }
 
 async function deleteCategory(id) {
-  const response = await fetch(`https://localhost:3000/categories/${id}`, {
+  const response = await fetch(`https://zdenkomarkovic.github.io/users_ads_api/users_ads.json/categories/${id}`, {
     method: 'DELETE',
   });
   const category = await response.json();
@@ -106,7 +106,7 @@ async function deleteCategory(id) {
 }
 
 async function createCategory(name, image) {
-  const response = await fetch(`https://localhost:3000/categories`, {
+  const response = await fetch(`https://zdenkomarkovic.github.io/users_ads_api/users_ads.json/categories`, {
     method: 'POST',
     headers: {
       'Content-type': 'application/json',
@@ -121,7 +121,7 @@ async function createCategory(name, image) {
 }
 
 async function updateCategory(id, name, image) {
-  const response = await fetch(`https://localhost:3000/categories/${id}`, {
+  const response = await fetch(`https://zdenkomarkovic.github.io/users_ads_api/users_ads.json/categories/${id}`, {
     method: 'PUT',
     headers: {
       'Content-type': 'application/json',
@@ -136,7 +136,7 @@ async function updateCategory(id, name, image) {
 }
 
 async function getAds() {
-  const response = await fetch(`https://localhost:3000/ads`, {
+  const response = await fetch(`https://zdenkomarkovic.github.io/users_ads_api/users_ads.json/ads`, {
     method: 'GET',
   });
   const ads = response.json();
@@ -144,7 +144,7 @@ async function getAds() {
 }
 
 async function getAd(id) {
-  const response = await fetch(`https://localhost:3000/ads/${id}`, {
+  const response = await fetch(`https://zdenkomarkovic.github.io/users_ads_api/users_ads.json/ads/${id}`, {
     method: 'GET',
   });
   const ad = response.json();
@@ -152,7 +152,7 @@ async function getAd(id) {
 }
 
 async function deleteAd(id) {
-  const response = await fetch(`https://localhost:3000/ads/${id}`, {
+  const response = await fetch(`https://zdenkomarkovic.github.io/users_ads_api/users_ads.json/ads/${id}`, {
     method: 'DELETE',
   });
   const ad = response.json();
@@ -168,7 +168,7 @@ async function createAd(
   categoryId,
   userId
 ) {
-  const response = await fetch(`https://localhost:3000/ads`, {
+  const response = await fetch(`https://zdenkomarkovic.github.io/users_ads_api/users_ads.json/ads`, {
     method: 'POST',
     headers: {
       'Content-type': 'application/json',
@@ -197,7 +197,7 @@ async function updateAd(
   categoryId,
   userId
 ) {
-  const response = await fetch(`https://localhost:3000/ads/${id}`, {
+  const response = await fetch(`https://zdenkomarkovic.github.io/users_ads_api/users_ads.json/ads/${id}`, {
     method: 'PUT',
     headers: {
       'Content-type': 'application/json',
@@ -217,7 +217,7 @@ async function updateAd(
 }
 
 async function getAdByUserId(userId) {
-  const response = await fetch(`https://localhost:3000/ads?userId=${userId}`, {
+  const response = await fetch(`https://zdenkomarkovic.github.io/users_ads_api/users_ads.json/ads?userId=${userId}`, {
     method: 'GET',
   });
   const ad = response.json();
@@ -225,7 +225,7 @@ async function getAdByUserId(userId) {
 }
 
 async function getComments(adId) {
-  const response = await fetch(`https://localhost:3000/comments?adId=${adId}`, {
+  const response = await fetch(`https://zdenkomarkovic.github.io/users_ads_api/users_ads.json/comments?adId=${adId}`, {
     method: 'GET',
   });
   const comments = response.json();
@@ -233,7 +233,7 @@ async function getComments(adId) {
 }
 
 async function postComment(text, adId) {
-  const response = await fetch(`https://localhost:3000/comments`, {
+  const response = await fetch(`https://zdenkomarkovic.github.io/users_ads_api/users_ads.json/comments`, {
     method: 'POST',
     headers: {
       'Content-type': 'application/json',
